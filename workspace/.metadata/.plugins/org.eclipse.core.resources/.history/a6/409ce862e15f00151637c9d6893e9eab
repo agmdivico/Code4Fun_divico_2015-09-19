@@ -4,7 +4,7 @@ public class Numbers
 {
 	// def counter, array and amount
     private int count = 0; 
-    private int[] nums;
+    private int[] nums; s
 	private int max; 
 
     public Numbers(int n1)
