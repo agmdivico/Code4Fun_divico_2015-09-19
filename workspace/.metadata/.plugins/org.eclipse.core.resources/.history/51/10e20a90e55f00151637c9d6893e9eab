@@ -11,11 +11,9 @@ import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class WordFrek {
-	
- private int count = 0;
+public class WordFrek {
 
- public static void main(String args[]) throws Exception {
+ public static void main(String args[]) throws Exception {
   String filePath = "C:/work/adv/repo/book.odt";
 
   // Draw File to byte buffer
@@ -31,7 +29,7 @@ public class WordFrek {
 
   // Create pattern
   Pattern linePatt = Pattern.compile(".*$", Pattern.MULTILINE);
-  Pattern wordBrkPatt = Pattern.compile("[\\p{Punct}]");
+  Pattern wordBrkPatt = Pattern.compile("[\\p{Punct}\s}]");
 
   // Match pattern to buffer
   Matcher lineM = linePatt.matcher(charBuf);
@@ -60,7 +58,6 @@ public class WordFrek {
 		}
 	}
   }
-  
   System.out.println(m);
-  }
+    }
 }

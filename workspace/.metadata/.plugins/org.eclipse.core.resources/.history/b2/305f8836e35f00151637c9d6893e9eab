@@ -1,7 +1,5 @@
 package new_project_ADV;
 
-import javax.xml.soap.Node;
-
 public class ListNodeN {
 	  Node head;
 	  int count;

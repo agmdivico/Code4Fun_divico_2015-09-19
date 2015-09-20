@@ -1,7 +1,5 @@
 package new_project_ADV;
 
-
-
 public class Numbers
 {
 	// def counter, array and amount
