@@ -3,6 +3,7 @@ pubblic repo containing given problems
 
 
 Exercises
+
 A. Write a program to fill an array of size N with the numbers from 1 to N in random order without duplicates
 Refrain from using shuffling algorithms or framework provided methods
 
