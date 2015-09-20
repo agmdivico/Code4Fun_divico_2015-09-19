@@ -1,13 +1,13 @@
 package new_project_ADV;
 
-import org.w3c.dom.Node;
+import javax.xml.soap.Node;
 
 public class ListNodeN {
 	  Node head;
 	  int count;
 
 	   ListNodeN(){
-	     //head = new Node();
+	     head = new Node();
 	     count = 0;
 	   }
 
@@ -17,9 +17,9 @@ public class ListNodeN {
 	        System.out.println("index greater than list limit");
 	        return null;
 	    }
-	    for(int i=0;i<index && (nod2.getNextSibling() != null);i++){
-	        nod2 = nod2.getNextSibling();
+	    for(int i=0;i<index && (nod2.getNext() != null);i++){
+	        nod2 = nod2.getNext();
 	    }
-	    return nod2.getNextSibling();
+	    return nod2.getNext();
 	  }
 }
